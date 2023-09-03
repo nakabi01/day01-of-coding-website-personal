@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+    
+    <div class="container">
+
+
+        <div id="portfolio">
+            <h1>NARIS BIRDANA</h1>
+            <h2> saya adalah salah satu mahasiswa universitas sain dan teknologi jayapura (UST). 
+                saya di jurusan sistem informasi dan pada semester ini saya banyak belajar coding 
+                dalam arti belajar web depeloved.
+            </h2>
+            <button>Download Cv</button>
+        </div>
+        <div id="profile-pic">
+            <img src="img/profile.jpg" alt="" class="employee">
+            <img src="img/profile2.jpg" alt="" class="shadow1">
+            <img src="img/profile3.avif" alt="" class="shadow2">
+            
+        </div>
+
+        <img src="img/close.png" alt="" id="close">
+
+
+
+    </div>
+    <script>
+        var portfolio =document.getElementById('portfolio');
+        var show =document.getElementById('profile-pic');
+        var hidden =document.getElementById('close');
+
+        show. onclick =function(){
+            portfolio.style.left ="-100%";
+            show. classList.add('preview');
+            hidden.style.display ="block"
+        }
+        hidden. onclick =function(){
+            portfolio.style.left ="20%";
+            show. classList.remove('preview');
+            hidden.style.display ="none"
+        }
+    </script>
+</body>
+</html>
